@@ -1,5 +1,5 @@
 steps to start the services
-1. cd <path/to/tweets_streaming>
+1. cd <path/to/streaming_pipeline>
 2. start rabbitmq and elasticsearch first by using command `docker-compose up -d` and wait until it starts
 On Terminal One:
 3. cd ./ingester
