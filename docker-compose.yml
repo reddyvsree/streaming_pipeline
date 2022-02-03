@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    volumes:
+      - type: bind
+        source: ./rabbitmq-plugins/
+        target: /etc/rabbitmq/
+    environment:
+      - RABBITMQ_ENABLED_PLUGINS_FILE=/etc/rabbitmq/enabled_plugins
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+    ports:
+      - 9200:9200

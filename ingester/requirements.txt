@@ -1,0 +1,5 @@
+certifi==2021.10.8
+elasticsearch==7.17.0
+pika==1.2.0
+urllib3==1.26.8
+xxhash==2.0.2

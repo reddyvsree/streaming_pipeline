@@ -1,0 +1,10 @@
+APP:
+  ENVIRONMENT: dev
+  DEBUG: True
+
+TWITTER:
+  consumer_key: "HMoEdIAqmM6JECeiLlOqnPpUo"
+  consumer_secret: "ImHFpoYJlLRdycZRC0b4Y8LMpAtKo6pTdDaucJMUUUcnseEIWR"
+
+FILTER_RULES:
+  rules: [{"value": "(Justin Bieber) -music -is:retweet -is:quote -is:reply"}]
